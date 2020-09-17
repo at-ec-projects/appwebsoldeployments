@@ -8,17 +8,17 @@ spec:
       http:
         paths:
           - backend:
-             serviceName: hellofirstservice
+             serviceName: hellofirst
              servicePort: 8080
     - host: second.192.168.99.101.nip.io
       http:
         paths:
           - backend:
-             serviceName: hellosecondservice
+             serviceName: hellosecond
              servicePort: 8080
     - host: third.192.168.99.101.nip.io
       http:
         paths:
           - backend:
-             serviceName: hellothirdservice
+             serviceName: hellothird
              servicePort: 8080
