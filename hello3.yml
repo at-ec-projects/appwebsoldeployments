@@ -1,0 +1,34 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: hellothird
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 8080
+    targetPort: 8080
+  selector:
+    app: hellothird
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hellothird
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: hellothird
+  template:
+    metadata:
+      labels:
+        app: hellothird
+    spec:
+      containers:
+      - name: hellothird
+        image: paulbouwer/hello-kubernetes:1.8
+        ports:
+        - containerPort: 8080
+        env:
+        - name: MESSAGE
+          value: Hello From Third Deployment

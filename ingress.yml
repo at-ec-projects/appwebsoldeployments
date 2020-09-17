@@ -1,0 +1,24 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: ingress-hosts
+spec:
+  rules:
+    - host: first.192.168.99.101.nip.io
+      http:
+        paths:
+          - backend:
+             serviceName: hellofirstservice
+             servicePort: 8080
+    - host: second.192.168.99.101.nip.io
+      http:
+        paths:
+          - backend:
+             serviceName: hellosecondservice
+             servicePort: 8080
+    - host: third.192.168.99.101.nip.io
+      http:
+        paths:
+          - backend:
+             serviceName: hellothirdservice
+             servicePort: 8080

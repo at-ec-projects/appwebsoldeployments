@@ -1,0 +1,34 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: hellosecond
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 8080
+    targetPort: 8080
+  selector:
+    app: hellosecond
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hellosecond
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: hellosecond
+  template:
+    metadata:
+      labels:
+        app: hellosecond
+    spec:
+      containers:
+      - name: hellosecond
+        image: paulbouwer/hello-kubernetes:1.8
+        ports:
+        - containerPort: 8080
+        env:
+        - name: MESSAGE
+          value: Hello From Second Deployment
