@@ -22,11 +22,11 @@ After installing minikube i created a Deployments directory and 3 yml files hell
 
 Step-5
 
-Above yml files configures three different services of type NodePort and three Deployment objects with three different Message
+Above yml files configures three different services of type LoadBalancer and three Deployment objects with three different Message
 
 Step-6
 
-We used service type as NodePort because service type LoadBalancer is working fine while creating simple Deployment but while configuring the deployment through terraform script it creates the service and the Deployment objects but is continuously analysing for the external ip.
+We used service type as LoadBalancer but service type LoadBalancer is working fine while creating simple Deployment but while configuring the deployment through terraform script we created the service as NodePort and the Deployment objects but is continuously analysing for the external ip.
 
 kubectl create -f hello1.yml
 kubectl create -f hello2.yml
