@@ -55,7 +55,7 @@ Apply:
 It will create a state file
 
 
-# To Run project at a publically accessible URL      
+# To Run project at a publically accessible URL    
 
 Below are the Steps:
 
@@ -82,3 +82,5 @@ Below Url's can be publicaly launched from anywhere
 -> http://first.15.207.24.5.nip.io/
 -> http://second.15.207.24.5.nip.io/
 -> http://third.15.207.24.5.nip.io/
+
+# Note:Here we used service type as NodePort and not LoadBalancer as in AWS creating a Load Balancer includes some cost.
