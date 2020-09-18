@@ -29,27 +29,27 @@ Step-6
 
 We used service type as LoadBalancer but service type LoadBalancer is working fine while creating simple Deployment but while configuring the deployment through terraform script we created the service as NodePort and the Deployment objects because if we take LoadBalancer as service type it is continuously analysing for the external ip.
 
-kubectl create -f hello1.yml
-kubectl create -f hello2.yml
-kubectl create -f hello3.yml
+-> kubectl create -f hello1.yml
+-> kubectl create -f hello2.yml
+-> kubectl create -f hello3.yml
 
 Step-7
 
 We created an ingress resource for each service using combination of minikube ip + nip.io which is configured in ingress.yml.
 kubectl apply -f ingress.yml
 Below are the combinations:
-http://first.192.168.99.101.nip.io/
-http://second.192.168.99.101.nip.io/
-http://third.192.168.99.101.nip.io/
+-> http://first.192.168.99.101.nip.io/
+-> http://second.192.168.99.101.nip.io/
+-> http://third.192.168.99.101.nip.io/
 
 Step-8
 
 Download Terraform.exe and create a directory called terraform and keep terraform.exe inside it.
 Configured all the resources again using Terraform script main.tf
-Initialize
-terraform.exe init
-Verify
-terraform.exe plan
-Apply
-terraform.exe apply
+Initialize:
+-> terraform.exe init
+Verify:
+-> terraform.exe plan
+Apply:
+-> terraform.exe apply
 It will create a state file
