@@ -36,7 +36,7 @@ We used service type as LoadBalancer but service type LoadBalancer is working fi
 Step-7
 
 We created an ingress resource for each service using combination of minikube ip + nip.io which is configured in ingress.yml.
-kubectl apply -f ingress.yml
+-> kubectl apply -f ingress.yml
 Below are the combinations:
 -> http://first.192.168.99.101.nip.io/
 -> http://second.192.168.99.101.nip.io/
