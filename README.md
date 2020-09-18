@@ -61,7 +61,7 @@ Below are the Steps:
 
 Step-1
 
-Created an EC2 instance on AWS
+Created an EC2 instance on AWS and the same has been attached to an elastic IP
 
 Step-2
 
