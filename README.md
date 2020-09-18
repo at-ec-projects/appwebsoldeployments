@@ -1,6 +1,6 @@
 # appwebsoldeployments
 # All yaml files are under addwebsoldeployments
-# Refer ScreenShots provided in images
+# Refer ScreenShots.zip provided
 
 Step-1
 
