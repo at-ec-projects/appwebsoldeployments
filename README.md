@@ -53,3 +53,32 @@ Verify:
 Apply:
 -> terraform.exe apply
 It will create a state file
+
+
+# To Run project at a publically accessible URL      
+
+Below are the Steps:
+
+Step-1
+
+Created an EC2 instance on AWS
+
+Step-2
+
+Installed kubectl and minikube
+
+Step-3
+
+Using the terraform script main_ec2.yml i created the deployments
+
+Step-4
+
+Installed Nginx and used the same as Reverse proxy by unlink the default configuration file and creating the new one.
+
+Step-5
+
+Below Url's can be publicaly launched from anywhere
+
+-> http://first.15.207.24.5.nip.io/
+-> http://second.15.207.24.5.nip.io/
+-> http://third.15.207.24.5.nip.io/
