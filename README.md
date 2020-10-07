@@ -69,7 +69,7 @@ Installed kubectl and minikube
 
 Step-3
 
-Using the terraform script main_ec2.yml i created the deployments
+Using the terraform script main_ec2.tf i created the deployments
 
 Step-4
 
